@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>70</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>1</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>560</width>
+    <height>70</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>560</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Inter Light</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Buo Prototype</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../Pictures/Link to Pictures/155410143_3717931704964661_1567340756741086546_n.jpg</normaloff>../../../../Pictures/Link to Pictures/155410143_3717931704964661_1567340756741086546_n.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QStackedWidget" name="page_stack">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="contextMenuPolicy">
+       <enum>Qt::NoContextMenu</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="no_items_page">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLineEdit" name="cache_query_2">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBox_2">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="page_2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLineEdit" name="cache_query">
+            <property name="contextMenuPolicy">
+             <enum>Qt::NoContextMenu</enum>
+            </property>
+            <property name="maxLength">
+             <number>150</number>
+            </property>
+            <property name="frame">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+            <property name="placeholderText">
+             <string>search</string>
+            </property>
+            <property name="clearButtonEnabled">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="checkBox">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QLabel" name="top_cached_widget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>2</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="focusPolicy">
+           <enum>Qt::WheelFocus</enum>
+          </property>
+          <property name="contextMenuPolicy">
+           <enum>Qt::NoContextMenu</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>true</bool>
+          </property>
+          <property name="lineWidth">
+           <number>0</number>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textFormat">
+           <enum>Qt::MarkdownText</enum>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::LinksAccessibleByKeyboard|Qt::LinksAccessibleByMouse</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QScrollArea" name="scrollArea">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
+            <horstretch>0</horstretch>
+            <verstretch>9</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Box</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarAlwaysOff</enum>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <widget class="QWidget" name="scrollAreaWidgetContents">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>518</width>
+             <height>78</height>
+            </rect>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="1" column="1">
+             <widget class="QListView" name="cache_hit_list">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::HLine</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Plain</enum>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

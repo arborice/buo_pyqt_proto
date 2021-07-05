@@ -27,11 +27,11 @@ class LangStats:
         self.comments = comments
 
     def __str__(self):
-        disp_val = f"\t{self.name}:"
+        disp_val = f"{self.name}:"
         if self.loc is not None:
-            disp_val += f"\n\tlines of code: {self.loc}"
+            disp_val += f"\nlines of code: {self.loc}"
         if self.comments is not None:
-            disp_val += f"\n\tcommented lines: {self.comments}"
+            disp_val += f"\ncommented lines: {self.comments}"
         return disp_val
 
 

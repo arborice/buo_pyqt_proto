@@ -40,6 +40,7 @@ class TopCachedWidget(QLabel):
 
     def update(self, data: Union[DirMeta, MediaMeta, None]):
         self.data = data
+        self.hydrateLabels()
 
     def hide(self):
         self.setHidden(True)

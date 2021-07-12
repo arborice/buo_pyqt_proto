@@ -60,19 +60,23 @@ class BuoPrototype(QMainWindow):
         self.setSizePolicy(sizePolicy)
         self.setMinimumSize(QSize(560, 70))
         self.setMaximumSize(QSize(560, 600))
+
         font = QFont()
         font.setFamily("Inter Light")
         font.setPointSize(10)
         self.setFont(font)
+
         self.setContextMenuPolicy(Qt.NoContextMenu)
         icon = QIcon()
         icon.addPixmap(QPixmap(
             "../../../../Pictures/Link to Pictures/155410143_3717931704964661_1567340756741086546_n.jpg"), QIcon.Normal, QIcon.Off)
         self.setWindowIcon(icon)
+
         self.centralwidget = QWidget(self)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_3 = QGridLayout(self.centralwidget)
         self.gridLayout_3.setObjectName("gridLayout_3")
+
         self.page_stack = QStackedWidget(self.centralwidget)
         sizePolicy = QSizePolicy(
             QSizePolicy.MinimumExpanding, QSizePolicy.Minimum)
@@ -85,6 +89,7 @@ class BuoPrototype(QMainWindow):
         self.page_stack.setAutoFillBackground(False)
         self.page_stack.setLineWidth(0)
         self.page_stack.setObjectName("page_stack")
+
         self.no_items_page = QWidget()
         self.no_items_page.setObjectName("no_items_page")
         self.gridLayout_2 = QGridLayout(self.no_items_page)
@@ -101,6 +106,7 @@ class BuoPrototype(QMainWindow):
         self.horizontalLayout_2.addWidget(self.checkBox_2)
         self.gridLayout_2.addLayout(self.horizontalLayout_2, 0, 0, 1, 1)
         self.page_stack.addWidget(self.no_items_page)
+
         self.results_page = QWidget()
         self.results_page.setObjectName("results_page")
         self.verticalLayout = QVBoxLayout(self.results_page)
@@ -153,6 +159,7 @@ class BuoPrototype(QMainWindow):
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout = QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout.setObjectName("gridLayout")
+
         self.cache_hit_list = QListView(
             self.scrollAreaWidgetContents)
         self.cache_hit_list.setContextMenuPolicy(Qt.NoContextMenu)
